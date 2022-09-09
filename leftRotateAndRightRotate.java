@@ -7,9 +7,9 @@ public class leftRotateAndRightRotate {
 		
 		// leftRotate
 		int[] leftRotate= {1,2,3,4,5};
-	    System.out.println("How many times you want left rotate:");
-	    int numberOfTime=sc.nextInt();
-		for(int j=0;j<numberOfTime;j++) {
+	    	System.out.println("How many times you want left rotate:");
+	    	int numberOfTime=sc.nextInt();
+		for(int j=0;j<numberOfTime%leftRotate.length;j++) {
 			int temp=leftRotate[0];
 			for(int i=1;i<leftRotate.length;i++) {
 				leftRotate[i-1]=leftRotate[i];
@@ -22,9 +22,9 @@ public class leftRotateAndRightRotate {
 		
 		// rigthRotate
 		int[] rigthRotate= {1,2,3,4,5};
-	    System.out.println("How many times you want right rotate:");
-	    int number_OfTime=sc.nextInt();
-		for(int j=0;j<number_OfTime;j++) {
+		System.out.println("How many times you want right rotate:");
+		int number_OfTime=sc.nextInt();
+		for(int j=0;j<number_OfTime%rigthRotate;j++) {
 			int temp=rigthRotate[rigthRotate.length-1];
 			for(int i=rigthRotate.length-1;i>0;i--) {
 				rigthRotate[i]=rigthRotate[i-1];
