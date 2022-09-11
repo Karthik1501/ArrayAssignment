@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class UniqueElement{
+  public static void main(String[] args){
+    int[] ary={1,2,3,4,2,5,1,3,4};
+    int result=0;
+    for(int num : ary){
+      result^= num;
+  }
+    System.out.println("Unique element: "+result);
+}
