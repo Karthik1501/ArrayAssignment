@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Swap_element{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    
+    System.out.println("Enter first number : ");
+    int fnum = sc.nextInt();
+    
+    System.out.println("Enter secong number : ");
+    int snum = sc.nextInt();
+    
+    System.out.println("Before swap First number :+ fnum + "second number"+snum);
+      
+      fnum=fnum ^ snum;
+      snum=fnum^snum;
+      fnum=fnum^snum;
+      
+     System.out.println("After swap First number :+ fnum + "second number"+snum);
+   }
+  }
