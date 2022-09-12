@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Even_odd{
+  public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  
+  System.out.println("Enter your number:");
+  int num=sc.nextInt();  // ex num=55;
+  if((num&1)==0)  //55 --> 110111 & 1 --> 1 --> odd num
+    System.out.println("Even number: "+num);
+   else
+    System.out.printl("Odd number: "+num);
+  }
+}
