@@ -1,0 +1,25 @@
+package leetcode;
+import java.util.*;
+public class RankTranform {
+
+	public static void main(String[] args) {
+		int rank[]= {37,12,28,9,100,56,80,5,12};
+		int[] clon=rank.clone();
+		int[] result=new int[rank.length];
+		Arrays.sort(clon);
+		HashMap<Integer,Integer> temp= new HashMap<>();
+		
+		int renk=1;
+		for(int i=0;i<clon.length;i++) {
+			if(!temp.containsKey(clon[i]))
+				temp.put(clon[i], renk++);
+		}
+		
+		for(int i=0;i<result.length;i++) {
+			result[i]= temp.get(rank[i]);
+		}
+		System.out.println(Arrays.toString(rank));
+		System.out.println(Arrays.toString(result));
+	}
+
+}
