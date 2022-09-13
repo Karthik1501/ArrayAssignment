@@ -1,0 +1,36 @@
+import java.util.Stack;
+
+public class StackDetails {
+
+	public static void main(String[] args) {
+		
+		//create Stack
+		Stack<Integer>  stack= new Stack<>();
+		
+		//add the element in stack 
+		System.out.println(stack.push(3));//push add the element in the stack and return that
+		//element
+		stack.push(23);
+		stack.push(46);
+		stack.push(78);
+		stack.push(89);
+		Stack.push(56);
+
+		//it print full stack elements 
+		System.out.println(stack);
+		
+	       //it return last element and remove it
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		
+		
+		//it return last element and don't delete
+		System.out.println(stack.peek());
+		
+		
+		//it return that element position from right to left . if element is not it will be return -1
+		System.out.println(stack.search(4));
+		
+	}
+
+}
