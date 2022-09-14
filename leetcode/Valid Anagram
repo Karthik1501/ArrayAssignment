@@ -1,0 +1,16 @@
+https://leetcode.com/problems/valid-anagram/
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        char[] s1=s.toCharArray();
+        char[] s2=t.toCharArray();
+        Arrays.sort(s1);
+        Arrays.sort(s2);
+        String str1=String.valueOf(s1);
+        String str2=String.valueOf(s2);
+        if(str1.equals(str2))
+            return true;
+        else
+            return false;
+    }
+}
