@@ -1,0 +1,22 @@
+class Solution {
+    public int findLucky(int[] arr) {
+     
+        Map<Integer,Integer> result= new HashMap<>();
+       
+        for(int i:arr){
+            if(result.containsKey(i)){
+                int temp = result.get(i);
+                result.put(i,++temp);
+            }
+            else
+                result.put(i,1);
+        }
+        
+        int res=-1;
+        for(int key:result.keySet())
+            if(key==result.get(key))
+                res=result.get(key);
+        
+        return res;
+    }
+}
