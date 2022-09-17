@@ -55,9 +55,4 @@ public class Player {
 	public int getOver() {
 		return over;
 	}
-
-	@Override
-	public String toString() {
-		return "name:" + this.getName() + " runs:" + getRuns();
-	}
 }
