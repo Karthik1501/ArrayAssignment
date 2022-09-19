@@ -2,7 +2,7 @@ package colsoleApp;
 
 import java.util.*;
 
-public class match {
+public class Match {
 
 	Team team1, team2, bowlingTeam, battingTeam;
 
